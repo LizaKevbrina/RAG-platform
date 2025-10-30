@@ -1,6 +1,6 @@
-# 📂 Автоматическое обновления базы знаний для AI-агента: n8n + FastAPI
-
 <div align="center">
+
+# 📂 Автоматическое обновления базы знаний для AI-агента: n8n + FastAPI
 
 [![n8n](https://img.shields.io/badge/n8n-workflow-EA4B71?style=for-the-badge&logo=n8n)](https://n8n.io)
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
