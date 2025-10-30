@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'validation-service'
+    static_configs:
+      - targets: ['validation-service:8001']
+
+  - job_name: 'parser-service'
+    static_configs:
+      - targets: ['parser-service:8002']
+
+  - job_name: 'embedder-service'
+    static_configs:
+      - targets: ['embedder-service:8003']
+
+  - job_name: 'storage-service'
+    static_configs:
+      - targets: ['storage-service:8004']
+
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
