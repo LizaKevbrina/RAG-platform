@@ -315,7 +315,7 @@ curl http://localhost:8080/health
 | Проект | Описание | Связь |
 |--------|----------|-------|
 | **[ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-microservices)** | Главный проект — голосовой ассистент для продаж | Использует RAG Sync для обновления базы знаний |
-| **[ RAG Knowledge Sync]** (этот репозиторий) | Автосинхронизация документов из Google Drive | Standalone модуль для любых проектов |
+| **RAG Knowledge Sync** (этот репозиторий) | Автосинхронизация документов из Google Drive | Standalone модуль для любых проектов |
 | **[ STT Microservice](https://github.com/LizaKevbrina/stt-microservice)** | Распознавание голоса | Используется в главном проекте |
 
 ---
@@ -379,8 +379,8 @@ MIT License — см. [LICENSE](LICENSE)
 ###  Связанные проекты
 
 Часть экосистемы AI-агентов:
-- [ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-microservices) — главный проект
-- [ STT Microservice](https://github.com/LizaKevbrina/stt-microservice) — распознавание речи
+ [ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-microservices) — главный проект
+ [ STT Microservice](https://github.com/LizaKevbrina/stt-microservice) — распознавание речи
 
 ---
 
