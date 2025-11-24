@@ -116,11 +116,11 @@ AI-агенты теряют актуальность данных из-за:
 
 ### Вариант 1: Как часть AI Sales Agent (главный проект)
 
-Этот модуль используется в [ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-microservices) для автоматического обновления базы знаний о недвижимости.
+Этот модуль используется в [ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-n8n) для автоматического обновления базы знаний о недвижимости.
 
 ```bash
 # Уже включен в главный проект
-cd ai-agent-microservices
+cd ai-agent-n8n
 make start  # RAG-синхронизация запустится автоматически
 ```
 
@@ -132,7 +132,7 @@ make start  # RAG-синхронизация запустится автомат
 
 **Шаг 1:** Клонируйте репозиторий
 ```bash
-git clone https://github.com/LizaKevbrina/rag-knowledge-sync.git
+git clone https://github.com/LizaKevbrina/RAG-platform.git
 cd rag-knowledge-sync
 ```
 
@@ -237,7 +237,7 @@ flowchart LR
 
 ```bash
 # 1. Клонируем
-git clone https://github.com/LizaKevbrina/rag-knowledge-sync.git
+git clone https://github.com/LizaKevbrina/RAG-platform.git
 cd rag-knowledge-sync
 
 # 2. Настраиваем секреты
@@ -314,9 +314,9 @@ curl http://localhost:8080/health
 
 | Проект | Описание | Связь |
 |--------|----------|-------|
-| **[ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-microservices)** | Главный проект — голосовой ассистент для продаж | Использует RAG Sync для обновления базы знаний |
+| **[ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-n8n)** | Главный проект — голосовой ассистент для продаж | Использует RAG Sync для обновления базы знаний |
 | **RAG Knowledge Sync** (этот репозиторий) | Автосинхронизация документов из Google Drive | Standalone модуль для любых проектов |
-| **[ STT Microservice](https://github.com/LizaKevbrina/stt-microservice)** | Распознавание голоса | Используется в главном проекте |
+| **[ STT Microservice(https://github.com/LizaKevbrina/asyn-STT-yandex-speechkit)** | Распознавание голоса | Используется в главном проекте |
 
 ---
 
@@ -347,7 +347,7 @@ results = response.json()
 # Добавьте в ваш docker-compose.yml
 services:
   rag-sync:
-    image: ghcr.io/lizakevbrina/rag-knowledge-sync:latest
+    image: ghcr.io/lizakevbrina/RAG-platform:latest
     environment:
       - SUPABASE_URL=${YOUR_SUPABASE_URL}
       - YANDEX_API_KEY=${YOUR_API_KEY}
@@ -379,8 +379,8 @@ MIT License — см. [LICENSE](LICENSE)
 ###  Связанные проекты
 
 Часть экосистемы AI-агентов:
- [ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-microservices) — главный проект
- [ STT Microservice](https://github.com/LizaKevbrina/stt-microservice) — распознавание речи
+ [ AI Sales Agent](https://github.com/LizaKevbrina/ai-agent-n8n) — главный проект
+ [ STT Microservice](https://github.com/LizaKevbrina/asyn-STT-yandex-speechkit) — распознавание речи
 
 ---
 
